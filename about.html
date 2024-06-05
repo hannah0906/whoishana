@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hannah Paulino</title>
+    <link rel="stylesheet" href="stylef.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        .intro {
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #5f6f52;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .hobbies {
+            padding: 20px;
+            text-align: center;
+            background-color: #A9B388;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .intro h1, .future h1 {
+            color: #5f6f52;
+            font-size: 36px;
+            margin: 12px;
+        }
+
+        .intro p, .future p {
+            color: #5f6f52;
+            font-size: 18px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .hobbies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .hobby {
+            background-color: #F9EBC7;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .hobby h3 {
+            color: #5f6f52;
+        }
+
+        .hobbies h2 {
+            color: #5f6f52;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            color: #F9EBC7;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid #5f6f52;
+        }
+
+        .contact h2 {
+            text-align: center;
+            color: #5f6f52
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #5f6f52;
+            border-radius: 5px;
+            color: #5f6f52;
+        }
+
+        .contact-form button {
+            background-color: #5f6f52;
+            color: white;
+            width: 200px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #A9B388;
+            color: #5f6f52;
+        }
+
+        .social-media {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .social-media h2 {
+            color:#5f6f52;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #A9B388;
+            font-size: 24px;
+        }
+
+        .social-media a:hover {
+            color: #5f6f52;
+        }
+    </style>
+    <header>
+        <div id="top" class="top">
+            <a href="index.html"><img src="h.png" alt="Hannah Paulino Logo"></a>
+            <nav>
+                <ul>
+                    <li class="list">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About </a>
+                    </li>
+                    <li>
+                        <a href="resume.html"> Resume </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"> Gallery </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="intro">
+        <h1>About Me</h1>
+        <p>Hi! My name is Maria Hannah Mae Zuela Paulino, a 2nd year Bachelor of Science in Computer Science student at STI Colleg Ortigas-Cainta. 
+        My career journey stemmed from the curiousity that grew in me upon seeing my father being into various types of consoles and video games.
+        Having a close relationship with my father growing up, I hve witnessed how much he likes to venture paths that are related to technology. 
+        Hence, I, myself, have also gained interest in this field.</p> <br>
+
+        <p>Though I already have the interest in the industry, I did not have enough courage to venture such path because deciding
+        for a journey to go into is scarier than everyone might think. I believe that my turning point was when my sister took Bachelor of Science in 
+        Computer Engineering. I have seen her do what I regard back then as "cool stuffs" with only just her laptop. And so, I decided to be also
+        cool myself. </p> <br>
+
+        <p>In 5 years, I see myself as a leading expert in software development, creating innovative applications that enhance user experiences and 
+        improve everyday life. Though coding might be complex at times and involves being in a challenging environment,
+         I can continuously learn and apply my existing knowledge to develop solutions that make a real difference.
+        </p> <br>
+
+        <p>Growing up in a very loving and understanding family, I recognized the value of every opportunity and the sacrifices made for anything at 
+        an early stage. This perspective fuels my drive to excel and motivates me to come after every opportunities to learn, 
+        grow, and contribute meaningfully to society. Moreover, my dedication to my goals and personal values, together with my 
+        deep-rooted passion for technology and commitment to social responsibility, distinguishes me as a person who is not only capable but also 
+        deeply invested in making a difference which is what matters the most in this fast-evolving world.
+        </p> <br>
+    </div>
+
+    <div class="hobbies">
+        <h2>My Hobbies include the following:</h2> 
+        <div class="hobby">
+            <h3>Traveling to new places</h3>
+        </div>
+        <div class="hobby">
+            <h3>Reading Books</h3>
+        </div>
+        <div class="hobby">
+            <h3>Cooking / Baking</h3>
+        </div>
+        <div class="hobby">
+            <h3>Eating and Sleeping</h3>
+        </div>
+        <div class="hobby">
+            <h3>Playing mobile games</h3>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form"> 
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Message" required><br>
+            <button type="submit">Send</button> <br> <br>
+        </form>
+    </div>
+
+    <div class="social-media">
+        <h2>Connect with me on Social Media</h2>
+        <a href="https://www.facebook.com/hannahpottiex" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/nothushhannahhh" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/heyhaaannah_" target="_blank">Instagram</a>
+    </div>
+
+    <br> 
+
+    <footer>
+        <p>&copy; 2024 | Hannah Mae Paulino</p>
+    </footer>
+</body>
+</html>

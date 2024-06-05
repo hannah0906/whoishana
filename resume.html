@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hannah Paulino</title>
+    <link rel="stylesheet" href="stylef.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .resume {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+            padding-left: 100px;
+        }
+
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            margin-right: 18px;
+            padding-left: 75px;
+        }
+
+        .personal-info h1 {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 2em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .pic:hover {
+            transform: scale(1.5);
+            filter: grayscale(50%);
+        }
+
+        a:hover {
+            color: #a9b388;
+        }
+
+        .section, .section1, .section2, .section3, .section4, .section5, .section31 {
+            margin-bottom: 20px;
+        }
+
+        .section h2, .section1 h2, .section2 h2, .section3 h2, .section4 h2, .section5 h2, .section31 h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .dl {
+            text-align: center;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #5f6f52;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            background-color: #a9b388;
+            color: #5f6f52;
+        }
+
+        .email-header {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+   <script>
+    // Function to confirm if the user wants to download the resume
+    function confirmDownload(event) {
+        // Display a confirmation dialog
+        if (!confirm('The file may contain unwanted data. Confirm download?')) {
+            // If the user clicks "Cancel", prevent the default action (download)
+            event.preventDefault();
+        }
+    }
+
+    // Wait until the entire document content is fully loaded before running the function
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select the download button and add a click event listener to it
+        document.querySelector('.download-button').addEventListener('click', confirmDownload);
+
+        // Select the email element which will be hovered over
+        var email = document.querySelector('.email');
+        // Select the email header element that will be shown on hover
+        var emailHeader = document.querySelector('.email-header');
+
+        // Add a mouseover event listener to the email element
+        email.addEventListener('mouseover', function() {
+            // Get the position and size of the email element
+            var rect = email.getBoundingClientRect();
+            // Set the top position of the email header relative to the email element
+            emailHeader.style.top = (rect.bottom + window.scrollY) + 'px';
+            // Set the left position of the email header relative to the email element
+            emailHeader.style.left = rect.left + 'px';
+            // Display the email header
+            emailHeader.style.display = 'block';
+        });
+
+        // Add a mouseout event listener to the email element to hide the email header
+        email.addEventListener('mouseout', function() {
+            // Hide the email header when the mouse is no longer over the email element
+            emailHeader.style.display = 'none';
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div id="top" class="top">
+            <img src="h.png" alt="Hannah Paulino Logo">
+            <nav>
+                <ul>
+                    <li class="list">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About </a>
+                    </li>
+                    <li>
+                        <a href="resume.html"> Resume </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"> Gallery </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="resume">
+        <div class="header">
+            <a class="picture" href="portfolio.html">
+            <div class="profile-pic">
+                <img class="pic" src="id.jpg" alt="Profile Picture">
+            </div>
+            </a>
+            <div class="personal-info">
+                <a href="http://www.facebook.com/hannahpottiex"> 
+                <h1>Ma. Hannah Mae Paulino</h1>
+                </a>
+                <div class="contact-info">
+                    <p>Email: <span class="email">paulino.280864@ortigas-cainta.sti.edu.ph</span></p> 
+                    <p>Phone: 09923933068</p>
+                    <p>Address: Overlooking Valley, Taytay, Rizal, Philippines</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Objective</h2>
+            <p>Motivated, teamwork-oriented and responsible Bachelor of Science in Computer Science (BSCS) student
+                with over 10 years of educational background from elementary to tertiary and almost 2 years of part-time
+                working experience. Certified learner with innovation experiences, STEM-oriented instructions, leadership,
+                and computer literacy skill.</p>
+        </div>
+        <br> 
+        <div class="section1">
+            <h2>Professional Skills</h2>
+            <ul>
+                <li>Programming Languages: HTML, CSS, JavaScript, Python</li>
+                <li>Database: SQL</li>
+                <li>Advanced proficiency in all Microsoft Office programs</li>
+                <li>Excellent analytical and problem-solving skills</li>
+                <li>Skilled in handling tasks in a team as well as individually.</li>
+            </ul>
+        </div>
+        <br> 
+        <div class="section2">
+            <h2>Fundraising Skills</h2>
+            <ul>
+                <li>Received donated goods from donors.</li>
+                <li>Maintained accurate donation records that cover the before, during, and after phases.</li>
+                <li>Assisted the organization of a donation drive.</li>
+                <li>Collected donations and provided receipts to donors.</li>
+            </ul>
+        </div>
+        <br> 
+        <div class="section3">
+            <h2>Personal Skills</h2>
+            <ul>
+                <li>Quality writing and communication skills.</li>
+                <li>Highly competitive attitude and strong self-motivation.</li>
+                <li>Excellent time-management skills.</li>
+                <li>Ability to adapt and learn new tools quickly.</li>
+                <li>Capable of managing multiple tasks and meeting due dates.</li>
+            </ul>
+        </div>
+
+        <br> 
+        <div class="section4">
+            <h2>Educational Background</h2>
+        <ul>
+            <li>Elementary, Nazarene Ville Elementary School, 2009-2016</li>
+            <li>Junior High School, San Jose NHS (STE Program), 2016-2020</li>
+            <li>Senior High School, San Jose NHS (STEM Strand), 2020-2022</li>
+            <li>BS in Computer Science, STI College Ortigas-Cainta, 2022-present</li>
+        </ul>
+        </div>
+        <br> 
+        <div class="section5">
+            <h2>Work Experience</h2>
+            <h3>Junior Coordinator</h3>
+            <p>Mega-Apps Builders, 2021 - Present</p>
+            <ul>
+                <li>Control emails that go to and from the company’s mailing account.</li>
+                <li>Collaborated with team members to meet project deadlines.</li>
+                <li>Ability to handle confidential company information.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dl">
+        <a href="resume.pdf" class="download-button" download>Download Resume</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 | Hannah Mae Paulino</p>
+    </footer>
+
+    <div class="email-header">
+        <strong>Outlook Email</strong><br>
+        Email: paulino.280864@ortigas-cainta.sti.edu.ph
+    </div>
+</body>
+</html>
